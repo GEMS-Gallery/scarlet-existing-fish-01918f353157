@@ -1,0 +1,14 @@
+service : {
+  getArticles: () -> (vec record {
+                            text;
+                            text;
+                            opt int;
+                          }) query;
+  getDogecoinInfo: () -> (text) query;
+  getDogecoinPriceHistory: () -> (vec record {
+                                        int;
+                                        float64;
+                                      }) query;
+  getRandomMemes: (nat) -> (vec text) query;
+  updatePrice: () -> ();
+}
