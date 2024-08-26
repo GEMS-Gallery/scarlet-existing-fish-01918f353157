@@ -9,6 +9,10 @@ service : {
                                         int;
                                         float64;
                                       }) query;
+  getFAQs: () -> (vec record {
+                        text;
+                        text;
+                      }) query;
   getRandomMemes: (nat) -> (vec text) query;
   updatePrice: () -> ();
 }

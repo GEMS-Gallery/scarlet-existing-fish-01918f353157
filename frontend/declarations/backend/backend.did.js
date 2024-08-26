@@ -11,6 +11,11 @@ export const idlFactory = ({ IDL }) => {
         [IDL.Vec(IDL.Tuple(IDL.Int, IDL.Float64))],
         ['query'],
       ),
+    'getFAQs' : IDL.Func(
+        [],
+        [IDL.Vec(IDL.Tuple(IDL.Text, IDL.Text))],
+        ['query'],
+      ),
     'getRandomMemes' : IDL.Func([IDL.Nat], [IDL.Vec(IDL.Text)], ['query']),
     'updatePrice' : IDL.Func([], [], []),
   });

@@ -6,6 +6,7 @@ export interface _SERVICE {
   'getArticles' : ActorMethod<[], Array<[string, string, [] | [bigint]]>>,
   'getDogecoinInfo' : ActorMethod<[], string>,
   'getDogecoinPriceHistory' : ActorMethod<[], Array<[bigint, number]>>,
+  'getFAQs' : ActorMethod<[], Array<[string, string]>>,
   'getRandomMemes' : ActorMethod<[bigint], Array<string>>,
   'updatePrice' : ActorMethod<[], undefined>,
 }
